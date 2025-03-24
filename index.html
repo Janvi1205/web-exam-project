@@ -5,442 +5,463 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PWIOI</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style type="text/css">
-     
-    </style> 
-    <!-- this is a comment  -->
+        
+        @media (max-width: 768px) {
+            .box {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .box > div {
+                width: 80% !important;
+                margin-left: 0 !important;
+                margin-bottom: 20px;
+            }
+            
+            .heading h1 {
+                text-align: center;
+                margin-left: 0 !important;
+            }
+            
+            .heading p {
+                text-align: center;
+                margin-left: 0 !important;
+            }
+            
+            .heading2 {
+                width: 90% !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            
+            .Main-content {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-left: 0 !important;
+            }
+            
+            footer {
+                grid-template-columns: 1fr !important;
+                margin-left: 20px !important;
+                gap: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <img style="height:30px;margin-left: 20px;" src="https://eduport.webestica.com/assets/images/logo.svg" alt="">
-
             <div class="container-fluid">
-              <a class="bg-info-subtle border rounded-3 p-2" style="margin-left: 20px; text-decoration: none;font-weight: bold;" class="navbar-brand" href="#">
-                <i class="bi bi-ui-radios-grid"></i>
-                <span >Category</span>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul  style="margin-left: 120px; gap: 20px;" class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-               
-               
-                  <li class="nav-item dropdown">
-                    <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Demos
-                    </a>
-                    <ul  class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <img style="height:30px;" src="https://eduport.webestica.com/assets/images/logo.svg" alt="">
+                <a class="bg-info-subtle border rounded-3 p-2 ms-2" style="text-decoration: none;font-weight: bold;" class="navbar-brand" href="#">
+                    <i class="bi bi-ui-radios-grid"></i>
+                    <span>Category</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll gap-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Demos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Accounts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Megamenu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Pages
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Accounts
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Megamenu
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-
-                  
-
-          
-                
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
-                  
-                </form>
-                <img style=" height: 50px;" class=" me-2 avatar-img rounded-circle" src="https://eduport.webestica.com/assets/images/avatar/01.jpg" alt="">
-              </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <img class="avatar-img rounded-circle" style="height: 50px;" src="https://eduport.webestica.com/assets/images/avatar/01.jpg" alt="">
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
-
-    <body>
-         <div class="box" style="display: flex;">
-            <div style="width: 230px; height:130px; margin-top: 30px; margin-left: 80px;" class=" bg-warning-subtle border rounded-2 ">
-                <i style="font-size: 80px; margin-left: 20px;color:goldenrod;" class="bi bi-tv"></i>
-                <p style=" margin-left: 109px;margin-top: -80px;font-weight: bold;font-size: 20px;">10K</p><br>
-                <p style="margin-left: 110px; margin-top: -35px; ">Online course</p>
-               
+    <div class="container-fluid">
+        <div class="box d-flex flex-wrap justify-content-center">
+            <div class="bg-warning-subtle border rounded-2 p-3 m-3" style="width: 230px;">
+                <i class="bi bi-tv" style="font-size: 60px; color:goldenrod;"></i>
+                <div class="ms-5">
+                    <p class="fw-bold mb-0 fs-4">10K</p>
+                    <p class="mb-0">Online course</p>
+                </div>
             </div>
-            <div style="background-color: rgb(172, 172, 179); width: 230px; height:130px; margin-top: 30px; margin-left: 80px;" class="  border rounded-2 ">
-                <i style="font-size: 80px; margin-left: 20px;color:rgb(14, 5, 114);" class="bi bi-person "></i>
-                <p style=" margin-left: 109px;margin-top: -80px;font-weight: bold;font-size: 20px;">200+</p><br>
-                <p style="margin-left: 110px; margin-top: -35px;">Expert Tutors</p>
-               
+            
+            <div class="bg-secondary-subtle border rounded-2 p-3 m-3" style="width: 230px;">
+                <i class="bi bi-person" style="font-size: 60px; color:rgb(14, 5, 114);"></i>
+                <div class="ms-5">
+                    <p class="fw-bold mb-0 fs-4">200+</p>
+                    <p class="mb-0">Expert Tutors</p>
+                </div>
             </div>
-            <div style="width: 230px; height:130px; margin-top: 30px; margin-left: 80px;" class=" bg-warning-subtle border rounded-2 ">
-                <i style="font-size: 80px; margin-left: 20px;color:purple" class="bi bi-mortarboard-fill"></i>
-                <p style=" margin-left: 109px;margin-top: -80px;font-weight: bold;font-size: 20px;">60k+</p><br>
-                <p style="margin-left: 110px; margin-top: -35px; ">Online Students</p>
-               
+            
+            <div class="bg-warning-subtle border rounded-2 p-3 m-3" style="width: 230px;">
+                <i class="bi bi-mortarboard-fill" style="font-size: 60px; color:purple;"></i>
+                <div class="ms-5">
+                    <p class="fw-bold mb-0 fs-4">60k+</p>
+                    <p class="mb-0">Online Students</p>
+                </div>
             </div>
-            <div style="width: 230px; height:130px; margin-top: 30px; margin-left: 80px;" class=" bg-info-subtle border rounded-2 ">
-                <i style="font-size: 70px; margin-left: 20px;color:rgb(59, 59, 228);" class="bi bi-patch-check-fill"></i>
-                <p style=" margin-left: 109px;margin-top: -70px;font-weight: bold;font-size: 20px;">6K+</p><br>
-                <p style="margin-left: 100px; margin-top: -35px;">Certified courses</p>
-               
+            
+            <div class="bg-info-subtle border rounded-2 p-3 m-3" style="width: 230px;">
+                <i class="bi bi-patch-check-fill" style="font-size: 60px; color:rgb(59, 59, 228);"></i>
+                <div class="ms-5">
+                    <p class="fw-bold mb-0 fs-4">6K+</p>
+                    <p class="mb-0">Certified courses</p>
+                </div>
             </div>
+        </div>
 
+        <div class="heading text-center my-5">
+            <h1>Most Popular Courses</h1>
+            <p class="mt-3">Choosen from hundreds of courses from specialist organisations</p>
+        </div>
 
-
-
-         </div>
-
-
-         <div class="heading">
-            <h1 style="margin-left: 420px; margin-top: 30px;">Most Popular Courses</h1>
-            <p style="margin-left: 390px;margin-top: 20px;">Choosen from hundreds of courses from specialist organisations</p>
-
-
-
-         </div>
-
-         <div style="margin-left: 90px;width: 1100px;" class="heading2 bg-info-subtle p-2  border rounded-2">
-
+        <div class="heading2 bg-info-subtle p-2 border rounded-2 mx-auto" style="max-width: 1100px;">
             <ul class="nav justify-content-center">
-               
-                <li class="nav-item ">
-                  <a class="nav-link fw-bold" href="#">Web Designs</a>
-                </li>
-             
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">Developemnt</a>
-                  </li>
-                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">Web Designs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">Development</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link fw-bold" href="#">Graphic Designs</a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link fw-bold" href="#">Marketing</a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link fw-bold" href="#">Finance</a>
-                  </li>
-              </ul>
+                </li>
+            </ul>
+        </div>
 
-
-         </div>
-
-
-         <div style="gap: 22px; margin-top: 40px;margin-left: 90px;display: flex;" class="Main-content">
-
-            <div class="card" style="width: 16rem;">
-                <img src="wbp1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span>All level</span>
-                    <i style="margin-left: 110px; color: red;" class="bi bi-heart-fill"></i>
-                  <h5 style="margin-top: 10px;" class="card-title">Sketch from A to Z:for<br>app designer</h5>
-                  <p class="card-text">Proposal indulged no do<br> sociable he throwing settling.</p>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i  class="bi bi-star"></i>
-                  <span class="ms-2">4.0/5.0</span>
-                  <div style="margin-top: 20px;">
-                    <i style="color: red;" class="bi bi-clock"></i>
-                    <span>12h 25m</span>
-                    <i style="color: goldenrod; margin-left: 20px;" class="bi bi-table"></i>
-                    <span>15 lectures</span>
-
-
-                  </div>
+        <div class="row justify-content-center g-4 px-3 mt-4">
+            <!-- First row of cards -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="wbp1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span>All level</span>
+                            <i class="bi bi-heart-fill text-danger"></i>
+                        </div>
+                        <h5 class="card-title mt-2">Sketch from A to Z: for app designer</h5>
+                        <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star"></i>
+                            <span class="ms-2">4.0/5.0</span>
+                        </div>
+                        <div class="mt-3">
+                            <i class="bi bi-clock text-danger"></i>
+                            <span>12h 25m</span>
+                            <i class="bi bi-table text-warning ms-3"></i>
+                            <span>15 lectures</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-              <div class="card" style="width: 16rem;">
-                <img src="wbp2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span>Beginner</span>
-                    <i style="margin-left: 110px; color: red;" class="bi bi-heart-fill"></i>
-                  <h5 style="margin-top: 10px;" class="card-title">Graphic Design<br>Masterclass</h5>
-                  <p class="card-text">Rooms oh fully taken by worse<br> do Points afraid but may end.</p>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;"class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i  style="color:goldenrod;" class="bi bi-star-half"></i>
-                  <span class="ms-2">4.5/5.0</span>
-                  <div style="margin-top: 20px;">
-                    <i style="color: red;" class="bi bi-clock"></i>
-                    <span>9h 56m</span>
-                    <i style="color: goldenrod; margin-left: 20px;" class="bi bi-table"></i>
-                    <span>65 lectures</span>
-
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="card" style="width: 16rem;">
-                <img src="wbp3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span>Beginner</span>
-                    <i style="margin-left: 110px; color: red;" class="bi bi-heart-fill"></i>
-                  <h5 style="margin-top: 10px;" class="card-title">Create a Design<br> System in Figma</h5>
-                  <p class="card-text">Rooms oh fully taken by worse<br> do. Points afraid but may end.</p>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;"class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-half"></i>
-                  <span class="ms-2">4.5/5.0</span>
-                  <div style="margin-top: 20px;">
-                    <i style="color: red;" class="bi bi-clock"></i>
-                    <span>5h 56m</span>
-                    <i style="color: goldenrod; margin-left: 20px;" class="bi bi-table"></i>
-                    <span>32 lectures</span>
-
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="card" style="width: 16rem;">
-                <img src="wbp4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span>Beginner</span>
-                    <i style="margin-left: 110px; color: red;" class="bi bi-heart-fill"></i>
-                  <h5 style="margin-top: 10px;" class="card-title">Deep Learning with<br> React-Native</h5>
-                  <p class="card-text">Far advanced settling say<br> finished raillery. Offered chiefly</p>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i  class="bi bi-star"></i>
-                  <span class="ms-2">4.0/5.0</span>
-                  <div style="margin-top: 20px;">
-                    <i style="color: red;" class="bi bi-clock"></i>
-                    <span>18h 56m</span>
-                    <i style="color: goldenrod; margin-left: 20px;" class="bi bi-table"></i>
-                    <span>99 lectures</span>
-
-
-                  </div>
-                </div>
-              </div>
-
-         </div>
-
-
-
-         <div style="gap: 22px; margin-top: 40px;margin-left: 90px;display: flex;" class="Main-content">
-
-            <div class="card" style="width: 16rem;">
-                <img src="wbp1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span>All level</span>
-                    <i style="margin-left: 110px; color: red;" class="bi bi-heart-fill"></i>
-                  <h5 style="margin-top: 10px;" class="card-title">Sketch from A to Z:for<br>app designer</h5>
-                  <p class="card-text">Proposal indulged no do<br> sociable he throwing settling.</p>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i  class="bi bi-star"></i>
-                  <span class="ms-2">4.0/5.0</span>
-                  <div style="margin-top: 20px;">
-                    <i style="color: red;" class="bi bi-clock"></i>
-                    <span>12h 25m</span>
-                    <i style="color: goldenrod; margin-left: 20px;" class="bi bi-table"></i>
-                    <span>15 lectures</span>
-
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="card" style="width: 16rem;">
-                <img src="wbp2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span>Beginner</span>
-                    <i style="margin-left: 110px; color: red;" class="bi bi-heart-fill"></i>
-                  <h5 style="margin-top: 10px;" class="card-title">Graphic Design<br>Masterclass</h5>
-                  <p class="card-text">Rooms oh fully taken by worse<br> do Points afraid but may end.</p>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;"class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i  style="color:goldenrod;" class="bi bi-star-half"></i>
-                  <span class="ms-2">4.5/5.0</span>
-                  <div style="margin-top: 20px;">
-                    <i style="color: red;" class="bi bi-clock"></i>
-                    <span>9h 56m</span>
-                    <i style="color: goldenrod; margin-left: 20px;" class="bi bi-table"></i>
-                    <span>65 lectures</span>
-
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="card" style="width: 16rem;">
-                <img src="wbp3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span>Beginner</span>
-                    <i style="margin-left: 110px; color: red;" class="bi bi-heart-fill"></i>
-                  <h5 style="margin-top: 10px;" class="card-title">Create a Design<br> System in Figma</h5>
-                  <p class="card-text">Rooms oh fully taken by worse<br> do. Points afraid but may end.</p>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;"class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-half"></i>
-                  <span class="ms-2">4.5/5.0</span>
-                  <div style="margin-top: 20px;">
-                    <i style="color: red;" class="bi bi-clock"></i>
-                    <span>5h 56m</span>
-                    <i style="color: goldenrod; margin-left: 20px;" class="bi bi-table"></i>
-                    <span>32 lectures</span>
-
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="card" style="width: 16rem;">
-                <img src="wbp4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span>Beginner</span>
-                    <i style="margin-left: 110px; color: red;" class="bi bi-heart-fill"></i>
-                  <h5 style="margin-top: 10px;" class="card-title">Deep Learning with<br> React-Native</h5>
-                  <p class="card-text">Far advanced settling say<br> finished raillery. Offered chiefly</p>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i style="color:goldenrod;" class="bi bi-star-fill"></i>
-                  <i  class="bi bi-star"></i>
-                  <span class="ms-2">4.0/5.0</span>
-                  <div style="margin-top: 20px;">
-                    <i style="color: red;" class="bi bi-clock"></i>
-                    <span>18h 56m</span>
-                    <i style="color: goldenrod; margin-left: 20px;" class="bi bi-table"></i>
-                    <span>99 lectures</span>
-
-
-                  </div>
-                </div>
-              </div>
-
-         </div>
-
-
-         <footer style="margin-top: 40px;margin-left: 80px; display: grid;grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;">
-            <div>
-                <img style="height:30px;" src="https://eduport.webestica.com/assets/images/logo.svg" alt="">
-                <div style="margin-top: 10px;">Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners</div>
-                 <div style="margin-top: 20px;">
-                    <i style="color: blue;" class="bi bi-facebook"></i>
-                    <i  style="color: purple; margin-left: 10px;" class="bi bi-instagram"></i>
-                    <i  style=  "color: rgb(97, 170, 194); margin-left: 10px;" class="bi bi-twitter"></i>
-                    <i  style="color: blue; margin-left: 10px;" class="bi bi-linkedin"></i>
-                 </div>
-            </div>
-            
-            <div>
-                <p style="margin-left: 28px;font-weight: bold;">Company</p>
-                <ul style="list-style-type: none;">
-                <li>ABOUT US</li>
-                <li>CONTACT US</li>
-                <li> NEWS AND BLOGS</li>
-                <li> LIBRARY</li>
-                <li> CAREER</li>
-
-                </ul>
-                
-
-            
             </div>
 
-            <div>
-                <p style="margin-left: 28px;font-weight: bold;">Community</p>
-                <ul style="list-style-type: none;">
-                    <li>DOCUMENTATION</li>
-                    <li>FAQ</li>
-                    <li>FORUM</li>
-                    <li>SITEMAP</li>
-
-                </ul>
-               
-               
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="wbp2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span>Beginner</span>
+                            <i class="bi bi-heart-fill text-danger"></i>
+                        </div>
+                        <h5 class="card-title mt-2">Graphic Design Masterclass</h5>
+                        <p class="card-text">Rooms oh fully taken by worse do. Points afraid but may end.</p>
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <span class="ms-2">4.5/5.0</span>
+                        </div>
+                        <div class="mt-3">
+                            <i class="bi bi-clock text-danger"></i>
+                            <span>9h 56m</span>
+                            <i class="bi bi-table text-warning ms-3"></i>
+                            <span>65 lectures</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-             <div>
-                <p style="margin-left: 28px;font-weight: bold;">Teaching</p>
-                <ul style="list-style-type: none;">
-                    <li>Become a teacher</li>
-                    <li>How to guide</li>
-                    <li>Terms and conditions</li>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="wbp3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span>Beginner</span>
+                            <i class="bi bi-heart-fill text-danger"></i>
+                        </div>
+                        <h5 class="card-title mt-2">Create a Design System in Figma</h5>
+                        <p class="card-text">Rooms oh fully taken by worse do. Points afraid but may end.</p>
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <span class="ms-2">4.5/5.0</span>
+                        </div>
+                        <div class="mt-3">
+                            <i class="bi bi-clock text-danger"></i>
+                            <span>5h 56m</span>
+                            <i class="bi bi-table text-warning ms-3"></i>
+                            <span>32 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                </ul>
-               
-             </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="wbp4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span>Beginner</span>
+                            <i class="bi bi-heart-fill text-danger"></i>
+                        </div>
+                        <h5 class="card-title mt-2">Deep Learning with React-Native</h5>
+                        <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star"></i>
+                            <span class="ms-2">4.0/5.0</span>
+                        </div>
+                        <div class="mt-3">
+                            <i class="bi bi-clock text-danger"></i>
+                            <span>18h 56m</span>
+                            <i class="bi bi-table text-warning ms-3"></i>
+                            <span>99 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-             <div>
-                <p style="margin-left: 28px;font-weight: bold;">Conatact</p>
-                <p>Toll free : +1234 568 963</p>
-                <p>Email:example@gmail.com</p>
-                <img style="height: 40px;" src="wbp6.svg" alt="">
+            <!-- Second row of cards (duplicated) -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="wbp1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span>All level</span>
+                            <i class="bi bi-heart-fill text-danger"></i>
+                        </div>
+                        <h5 class="card-title mt-2">Sketch from A to Z: for app designer</h5>
+                        <p class="card-text">Proposal indulged no do sociable he throwing settling.</p>
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star"></i>
+                            <span class="ms-2">4.0/5.0</span>
+                        </div>
+                        <div class="mt-3">
+                            <i class="bi bi-clock text-danger"></i>
+                            <span>12h 25m</span>
+                            <i class="bi bi-table text-warning ms-3"></i>
+                            <span>15 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="wbp2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span>Beginner</span>
+                            <i class="bi bi-heart-fill text-danger"></i>
+                        </div>
+                        <h5 class="card-title mt-2">Graphic Design Masterclass</h5>
+                        <p class="card-text">Rooms oh fully taken by worse do. Points afraid but may end.</p>
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <span class="ms-2">4.5/5.0</span>
+                        </div>
+                        <div class="mt-3">
+                            <i class="bi bi-clock text-danger"></i>
+                            <span>9h 56m</span>
+                            <i class="bi bi-table text-warning ms-3"></i>
+                            <span>65 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="wbp3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span>Beginner</span>
+                            <i class="bi bi-heart-fill text-danger"></i>
+                        </div>
+                        <h5 class="card-title mt-2">Create a Design System in Figma</h5>
+                        <p class="card-text">Rooms oh fully taken by worse do. Points afraid but may end.</p>
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <span class="ms-2">4.5/5.0</span>
+                        </div>
+                        <div class="mt-3">
+                            <i class="bi bi-clock text-danger"></i>
+                            <span>5h 56m</span>
+                            <i class="bi bi-table text-warning ms-3"></i>
+                            <span>32 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="wbp4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span>Beginner</span>
+                            <i class="bi bi-heart-fill text-danger"></i>
+                        </div>
+                        <h5 class="card-title mt-2">Deep Learning with React-Native</h5>
+                        <p class="card-text">Far advanced settling say finished raillery. Offered chiefly</p>
+                        <div>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star"></i>
+                            <span class="ms-2">4.0/5.0</span>
+                        </div>
+                        <div class="mt-3">
+                            <i class="bi bi-clock text-danger"></i>
+                            <span>18h 56m</span>
+                            <i class="bi bi-table text-warning ms-3"></i>
+                            <span>99 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container mt-5 mb-4">
+            <div class="row">
+                <div class="col-lg col-md-6 mb-4">
+                    <img style="height:30px;" src="https://eduport.webestica.com/assets/images/logo.svg" alt="">
+                    <div class="mt-3">Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners</div>
+                    <div class="mt-3">
+                        <i class="bi bi-facebook text-primary"></i>
+                        <i class="bi bi-instagram text-purple ms-2"></i>
+                        <i class="bi bi-twitter text-info ms-2"></i>
+                        <i class="bi bi-linkedin text-primary ms-2"></i>
+                    </div>
+                </div>
                 
-                
-             </div>
+                <div class="col-lg col-md-6 mb-4">
+                    <p class="fw-bold">Company</p>
+                    <ul class="list-unstyled">
+                        <li>ABOUT US</li>
+                        <li>CONTACT US</li>
+                        <li>NEWS AND BLOGS</li>
+                        <li>LIBRARY</li>
+                        <li>CAREER</li>
+                    </ul>
+                </div>
 
+                <div class="col-lg col-md-6 mb-4">
+                    <p class="fw-bold">Community</p>
+                    <ul class="list-unstyled">
+                        <li>DOCUMENTATION</li>
+                        <li>FAQ</li>
+                        <li>FORUM</li>
+                        <li>SITEMAP</li>
+                    </ul>
+                </div>
 
+                <div class="col-lg col-md-6 mb-4">
+                    <p class="fw-bold">Teaching</p>
+                    <ul class="list-unstyled">
+                        <li>Become a teacher</li>
+                        <li>How to guide</li>
+                        <li>Terms and conditions</li>
+                    </ul>
+                </div>
 
-
-
-         </footer>
-        
-
-
-
-
-
-    </body>
-
-
-
-
-
-
+                <div class="col-lg col-md-6">
+                    <p class="fw-bold">Contact</p>
+                    <p>Toll free: +1234 568 963</p>
+                    <p>Email: example@gmail.com</p>
+                    <img style="height: 40px;" src="wbp6.svg" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
